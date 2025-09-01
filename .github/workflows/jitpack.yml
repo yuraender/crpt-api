@@ -36,13 +36,13 @@ jobs:
         run: ./gradlew javadoc
 
       - name: Upload Javadoc as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: javadoc
           path: build/docs/javadoc/
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
           path: |
