@@ -1,5 +1,7 @@
 # CrptApi - Java-клиент для API Честного знака
 
+[![](https://jitpack.io/v/yuraender/crpt-api.svg)](https://jitpack.io/#yuraender/crpt-api)
+
 Thread-safe клиент для работы с API системы маркировки "Честный знак" с поддержкой ограничения количества запросов.
 
 ## Возможности
