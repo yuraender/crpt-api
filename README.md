@@ -15,6 +15,59 @@ Thread-safe клиент для работы с API системы маркир�
 - Java 11 или выше
 - Доступ к API Честного знака (https://ismp.crpt.ru)
 
+## Установка через JitPack
+
+### Maven
+
+1. Добавьте репозиторий JitPack в `pom.xml`:
+
+```xml
+<repositories>
+    <repository>
+        <id>JitPack</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+2. Добавьте зависимость:
+
+```xml
+<dependency>
+    <groupId>com.github.yuraender</groupId>
+    <artifactId>crpt-api</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+### Gradle
+
+1. Добавьте репозиторий JitPack в `build.gradle.kts`:
+
+```kotlin
+allprojects {
+    repositories {
+        maven("https://jitpack.io")
+    }
+}
+```
+
+2. Добавьте зависимость:
+
+```kotlin
+dependencies {
+    implementation("com.github.yuraender:crpt-api:1.0.0")
+}
+```
+
+### Локальная установка
+
+Для установки в локальный Maven репозиторий:
+
+```bash
+./gradlew publishToMavenLocal
+```
+
 ## Использование
 
 ### Инициализация
